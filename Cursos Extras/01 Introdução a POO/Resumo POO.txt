@@ -1,0 +1,76 @@
+Resumo sobre POO
+
+Enquanto a programação estruturada obedece a uma lógica de máquina, a programação orientada a objetos funciona de um modo mais similar ao raciocínio humano. Os seus códigos são organizados de acordo com objetos, e não processos, como no caso da programação estruturada.
+
+Conhecendo os dois tipos de programação, observe que a programação estruturada, quando realizada corretamente, tem a probabilidade de ter o desempenho superior ao da orientada a objeto. Isso ocorre, pois ela é procedural e realizada em sequência, onde cada linha de código é executada logo após a outra, sem desvios. Ao contrário do que ocorre na programação orientada a objetos
+
+É possível analisar claramente as diferenças entre esses dois modos de programar quando falamos de dados. Os procedimentos (funções) são os mesmos, o que muda é onde eles são declarados.
+
+Como a programação estruturada possui uma linguagem mais parecida com a da máquina, ela permite que o programador utilize melhor o desempenho do hardware, resultando em um código mais Eficiente.
+
+Exemplificando, na estruturada a execução do programa segue a sequência de execução no mesmo arquivo em sequência, retornando o seu código apenas em casos específicos como em iterações ou chamada de metódos. Já na orientação a objetos cada classe é separada em um arquivo diferente ou parte separada do código que tem que ser acessada pela máquina com mais frequência e que consome mais o hardware da máquina.
+
+Algumas definições:
+
+Objeto: Elementos do mundo real para o mundo da programação. O objeto é criado a partir de uma classe. Exemplo: Fusca.
+
+Atributos: São as características do objeto. Ou seja, no nosso exemplo de carro, podemos ter atributos como modelo, placa, ano, cor, tamanho etc.
+
+Métodos: São os comportamentos do objeto. No caso de um carro podemos pensar em ações como dar ré, ir para frente, frear etc.
+
+Classes: São os agrupamentos que descrevem todos os objetos de um único tipo. Por exemplo, o fusca pertence à classe dos carros. Não importa a sua marca ou ano. O que importa é que são objetos que se encaixam nesta classe, que serve como molde para a criação dos objetos. 
+
+Instâncias: São novos objetos que são criados a partir
+de uma classe. De maneira simples, são objetos que tem o seu comportamento e
+estado definidos por uma classe. 
+
+Importantes componentes:
+
+Abstração: 
+É o processo de aproximar o mundo real do mundo da programação, sendo o seu objetivo, simplificar um problema difícil. A abstração é a criação de uma classe abstrata, que é uma classe incompleta, como se fosse um quebra-cabeça. Assim, esta classe não permite a criação de instâncias e obriga a implementação de todos os métodos da classe assinados como ‘abstract’. 
+Resumindo, a abstração se concentra apenas nas informações que são importantes para o seu propósito. Dessa forma, ela mantém suas classes o mais simples possível, concentrando-se apenas no que é importante para uma determinada finalidade.
+A abstração nada mais é do que você abstrair coisas, ou seja, quando você tem algo muito grande, mas não há necessidade de cadastrar todas as informações.
+
+Na Prática
+Vamos supor que você está desenvolvendo um código com a classe “ser humano”. Essa classe é composta por inúmeras variantes (atributos), como por exemplo: altura, peso, cor da pele, cor do olho, CPF, nome, endereço etc.
+O objetivo do seu código é tratar o "ser humano" como cliente. Para cada cliente é preciso obter as informações de CPF, Nome e Endereço. As outras informações que pode obter na classe "ser humano", como cor da pele, cor do olho, altura, peso etc. não são importantes para esta situação.
+Portanto, podemos abstrair estas informações e considerar somente o que importa.
+
+
+Encapsulamento:
+Ao encapsular algo, você está colocando um objeto dentro de um recipiente, igual a um remédio de cápsula.
+Mas, afinal, qual é o propósito? Quando você encapsula um objeto, você está criando uma proteção e um padrão. Com isso, o propósito é de proteger o desenvolvedor do código e o código do desenvolvedor.
+Assim, quando você encapsula um objeto na POO, você está criando moldes padrão que fazem com que o conteúdo do objeto não importe. Você está determinando que o resultado será sempre o mesmo.
+
+Conceito de encapsulamento:
+É a ação de ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+Ok, mas se no fim eu estou ocultando detalhes do código, como que ele vai funcionar? A POO permite que você converse com esta cápsula, trocando informações entre o mundo externo e o objeto por meio de mensagens. Portanto, ao enviar mensagens para essa cápsula, você vai obter uma resposta, sem precisar entrar nela.
+Para que haja esta troca de mensagens, precisamos desenvolver uma interface. É a interface que permite esta comunicação com o mundo externo.
+
+Conceito de interface:
+É uma lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto de determinada classe. Ou seja, a interface é uma classe composta apenas por métodos (não possui atributos).
+
+Encapsular não é obrigatório na POO, mas é uma ótima prática para produzir classes mais eficientes.
+
+Anteriormente, você aprendeu sobre abstração, certo? Que nada mais é do que simplificar uma classe, se concentrando apenas em informações importantes e relevantes para o propósito do código.
+No encapsulamento esse conceito é muito importante, já que os métodos da classe encapsulada serão abstratos, ou seja, os métodos abstratos são previstos ali, mas não são implementados na interface.
+
+Resumindo, na interface iremos informar quais metódos devem ser implementados na classes, mas apenas de forma abstrata, a sua implementação é feita na classe que vai ser implementada essa interface, sobrescrevendo cada metódo. Os atributos na classe deverão ser definidos como privados ou protegidos(para serem acessados por outras classes com herdadas).
+
+
+Herança: 
+Assim como no mundo real, a herança na POO também diz respeito à ação de herdar. Ela nada mais é do que um objeto poder ser criado em uma outra classe, levando consigo todos os atributos e métodos já existentes em sua classe de origem.
+A herança é uma maneira de reutilizar o código já existente em uma nova classe. Desta forma, o código é aprimorado com novas e melhores capacidades. Ao utilizar este pilar, os programadores economizam tempo de desenvolvimento de um programa, já que eles reutilizam códigos já testados e aprovados.
+
+Estudar e fazer resumo desse conteúdo adicional sobre herança: https://dcm.ffclrp.usp.br/~evandro/ibm1030/constru/heranca.html
+
+
+Polimorfismo: 
+É um pilar da POO que é utilizado para que duas classes façam uso do mesmo método, implementando-o de formas diferentes. Ele permite que o programador desenvolva o código de forma ampla ao invés de perder muito tempo no desenvolvimento de códigos específicos. Ou seja, o polimorfismo permite que sistemas sejam escritos de forma a processar objetos que compartilham a mesma superclasse (classe já existente), como se eles fossem parte direta dela.
+
+Se pensarmos na superclasse Animal, estabelecemos o método “emitir o som do objeto animal”, ou seja, os objetos pato, cachorro e gato, por exemplo, devem emitir um som ao comando do método, mas cada um fará isso de um jeito diferente.
+
+Tipos de polimorfismo:
+Sobreposição : É o ato de reescrever um metódo com implementações diferentes, com o mesmo nome e usando a mesma assinatura em classes diferentes.
+Sobrecarga: É o ato de criar métodos com implementações diferentes, com o mesmo nome mas com assinaturas diferentes na mesma classe.
+Lembre: Assinatura é a quantidade e os tipos de atributos de um metódo.
