@@ -1,0 +1,393 @@
+Orientação a Objetos na Linguagem Python
+
+A linguagem Python foi criada para o desenvolvimento orientado a objetos, o que facilita muito a compreensão de alguns conceitos, torna a programação mais simples de ser compreendida e facilita o trabalho em equipe!
+
+Projetos desenvolvidos utilizando a Orientação a Objetos são mais estáveis, de fácil manutenção e sua reutilização é mais simples.
+
+Na linguagem Python, quando iniciamos um projeto, apesar dele poder ser desenvolvido utilizando os conceitos de programação procedural, a linguagem já vai pré organizá-lo para a orientação a objetos, pois ele será organizado por meio de estruturas denominadas Classes que vão armazenar trechos de códigos relacionados entre si.
+
+Ao utilizar a classe definida não é necessário compreender como os trechos dela foram desenvolvidos, basta utilizá-los por meio de um processo conhecido como Abstração.
+
+A seguir, vamos conhecer um pouco mais sobre alguns desses termos utilizados na linguagem Python!
+
+
+Técnicas de Orientação a Objetos no Python
+
+Conceitos de orientação a objetos:
+
+Classes: Definição do Objeto
+Conjunto de atributos e funções utilizado como modelo para criação dos objetos.
+
+Objetos: Instância de uma classe
+Variável que possui todas as características comuns à classe, porém, com valores diferentes em seus atributos.
+
+Abstração: Acesso às utilidades da classe
+Ação de utilizar mensagens para acessar os recursos de uma classe.
+
+Atributos: Características da classe
+Os atributos são características do elemento que a classe representa.
+
+Funções: Ações do objeto com retorno
+Função nativa do Python que retorna um valor declarado dentro da classe.
+
+Métodos: Ações do Objeto
+Função nativa do Python que não possui retorno declarado dentro de uma classe.
+
+Exceção: Tratamento de erros
+Controla o fluxo de execução durante um erro.
+
+Mensagem: 
+Chamada a um atributo, método ou função.
+
+Herança: classe e Sub Classe
+Uma classe pode herdar atributos, métodos e/ou funções de outra.
+
+Encapsulamento: Níveis de acesso
+O encapsulamento permite que os atributos sejam vistos somente nas classes onde foram declarados, definindo o nível de acesso de atributos, métodos ou funções.
+
+Polimorfismo: Sobrescrita
+Escolher entre os atributos, métodos e/ou funções que sobrescreveram ou que foram sobrescritos.
+
+
+Desenvolvimento de Projeto Prático
+
+Para visualizarmos a prática de desenvolvimento vamos criar um pequeno projeto de uma loja virtual. Nele, teremos desde o controle de clientes até as vendas.
+
+Para o desenvolvimento do projeto, vamos utilizar o ambiente de Anaconda Python, instalado anteriormente.
+
+
+Projeto
+
+Início do Projeto
+Definindo o diagrama de classes.
+
+Diretório do Projeto
+Para melhor organização dos arquivos do projeto e compilar as classes é fundamental definir um diretório base para armazenamento dos arquivos.
+
+DEV
+Crie uma pasta no diretório raiz do seu computador (C:). Isso facilitará o acesso e a manutenção dos arquivos.
+
+
+Criando o Projeto na IDE PyCharm
+
+Iniciando a IDE
+No menu Windows, localize a IDE PyCharm para iniciá-la.
+
+Criando o projeto
+Para criar o novo projeto, selecione a opção New Project na tela inicial da IDE PyCharm.
+
+Saiba Mais
+Na janela Create Project é possível definir as configurações iniciais do projeto, como a versão do interpretador do projeto e o local de armazenamento dos arquivos.
+
+
+Configuração do Novo Ambiente de Projeto
+
+>>1. Defina como local de armazenamento do projeto o diretório criado anteriormente. Adicione uma pasta denominada “app” ao diretório.
+>>2. Escolha como interpretador a versão Anaconda, recém instalada.
+>>3. Escolha a versão do Python que será utilizada.
+>>4. Desmarque a opção Create a main.py welcome script, para não criar a classe principal de forma automática.
+>>5. Aguarde o interpretador criar o projeto.
+>>6. Após a criação do projeto, o seu diretório já aparece disponível na área de trabalho do PyCharm.
+
+
+Criando Classes no Projeto
+
+As classes em Python nos auxiliam na otimização de um projeto.
+Em um projeto orientado a objetos utilizamos as classes para definição dos objetos.
+A seguir, vamos criar a primeira classe do nosso projeto!
+Inicialmente, a função desta classe será apenas testar a compilação do programa, mas, no decorrer do curso, voltaremos a falar sobre ela.
+
+>> 1. Para criar um arquivo Python, para a inserção de uma nova classe, clique com o botão direito do mouse sobre o diretório do projeto, menu New – Python File.
+>>2. Na janela New Python file selecione a opção Python file.
+Em seguida, digite o nome da classe Main.
+Para finalizar, pressione a tecla Enter.
+>>3. Com a classe Main ativa, digite o código para impressão de teste do projeto.
+>>4. Para compilar a classe, clique com o botão direito sobre ela no projeto e acione a opção Run.
+
+
+Nomenclaturas Python
+
+Antes de iniciarmos o projeto de desenvolvimento é muito importante compreender a nomenclatura dos elementos que compõem um projeto:
+Classes
+Variáveis
+Pacotes
+Objetos
+
+A Comunidade Python determina algumas convenções para atribuir nomes a esses elementos.
+
+Algumas convenções, caso ignoradas, não vão ocasionar erros ao código, mas manter um código organizado, seguindo as convenções, facilita muito o desenvolvimento e a compreensão do código, principalmente, quando o trabalho é realizado em equipe.
+
+A seguir, vamos conhecer um pouco mais sobre essas nomenclaturas!
+
+Definindo Nomenclatura para Elementos de um Projeto
+
+Classes:
+Referente a caracteres, seguir o mesmo padrão de variáveis e objetos.
+Sempre iniciar as classes com caracteres maiúsculos, inclusive as iniciais de nomes compostos:
+Exemplo: MinhaClasse()
+
+Variáveis e/ou Objetos:
+Utilizar somente caracteres e letras minúsculas.
+No caso de variáveis com nome composto, utilizar o underline para separação das palavras.
+Não iniciar o nome com números (podemos utilizar números no nome, mas não devemos iniciar com eles).
+Não utilizar caracteres especiais.
+Não utilizar espaçamento em branco.
+Evitar utilizar os caracteres I e O.
+
+Pacotes, Módulos e Métodos:
+Utilizar nomes pequenos.
+Utilizar sempre caracteres minúsculos.
+Utilizar o underline para unir nomes compostos.
+
+
+Classes no Projeto Python
+
+O desenvolvimento de uma aplicação envolve os mais diferentes tipos de informações, que são modeladas com estruturas que conhecemos como classes.
+A partir das classes é possível criar objetos, ou seja, uma classe é um “molde” para a criação de objetos.
+Podemos afirmar que classe é um Tipo Abstrato de Dados (TAD), ou seja, o código que define e implementa um novo tipo de informação.
+
+
+Criação de Objetos
+
+Antes de continuar o projeto Python, é importante fixar os principais conceitos da orientação a objetos.
+
+Classe:
+Podemos dizer que a classe é o projeto do objeto, contendo o código de programação.
+
+Objeto:
+É a execução do código de uma classe.
+Quando executamos o código de uma classe é criado um novo objeto na memória.
+Uma nova instância de um objeto é um tipo abstrato de informação de um novo tipo de dado.
+
+Instância:
+Podemos dizer que a instância é o objeto sendo executado.
+Quando criamos um novo objeto, afirmamos que estamos criando uma instância dele.
+
+
+Criando Classes no Projeto Python
+
+O desenvolvimento de um projeto Python envolve várias classes.
+No decorrer do curso já criamos uma primeira classe denominada Main, porém, não especificamos como essa declaração foi feita.
+Vamos compreender a criação de uma classe no projeto Python?
+Primeiramente, vamos iniciar criando o arquivo para desenvolvimento do código da classe.
+
+>>1. Clique com o botão direito sobre a pasta do projeto, menu New – Python File.
+>>2. Na janela New Python file digite o nome Cliente para a classe. Para finalizar, pressione a tecla Enter.
+
+
+Entendendo a Estrutura da Classe
+
+Após o desenvolvimento de um projeto Python, chegou a hora de entendermos a estrutura da classe.
+
+>>1. Iniciamos com a palavra class.
+>>2. Adicionamos o nome da classe.
+>>3. O operador dois pontos faz parte da sintaxe da declaração de classe.
+>>4. Utilizamos a palavra reservada pass, quando nenhuma estrutura será definida no corpo dessa classe.
+>>5. Em seguida, podemos definir o corpo da classe.
+
+class Cliente:
+    pass
+
+
+Declaração dos Membros da Classe
+
+Utilizamos os membros da classe para manter uma mesma estrutura de tudo que pertence a determinada informação da classe.
+Conforme já estudamos, classes são um tipo abstrato de dados, sendo assim, haverá valores e esses necessitam de funções específicas para serem manipulados.
+Temos dois tipos básicos de membros que compõe uma classe:
+
+Atributos(Propriedades):
+Os atributos armazenam as características de uma classe.
+Os atributos são as declarações de variáveis da classe.
+
+Métodos:
+São ações da classe, suas funções.
+Representam os estados e ações dos objetos quando instanciados.
+
+
+Definindo o Método Construtor
+
+O Método Construtor é definido de forma implícita ou explícita por todas as classes e, como o próprio nome já cita, é utilizado para construir o objeto.
+Todas as vezes que um objeto estiver sendo criado (instanciado) é por meio do Construtor que ele será inicializado.
+Este método é invocado, automaticamente, pela máquina virtual do Python todas as vezes que um objeto é criado.
+
+
+Inserindo o Método Construtor na Classe Cliente
+
+>>1. A palavra def é utilizada para a declaração de método.
+>>2. Para definir o construtor adicionamos: underline, underline, a palavra reservada init, underline, underline. O init() é um método especial que será chamado sempre que criarmos um objeto da classe.
+>>3. Incluímos o parâmetro obrigatório self, que está presente em todos os métodos. Resumidamente, podemos afirmar que o parâmetro self, neste momento, exporta as características do objeto.
+>>4. Para finalizar, adicionamos dois pontos (:).
+
+class Cliente:
+    def __init__(self):
+        pass
+
+Importante
+Todo método Python tem self como primeiro parâmetro.
+A palavra reservada representa o objeto em si, portanto, sempre que quisermos especificar atributos de objetos, devemos associá-lo à palavra reservada self.
+
+
+Como Adicionar Atributos à Classe?
+
+Para adicionar atributos a uma classe, basta definir o nome do atributo acompanhado da palavra reservada self, no método especial denominado _ _init_ _ do Método Construtor.
+Vamos adicionar dois atributos à classe Cliente.
+Primeiramente, remova a palavra reservada pass.
+Em seguida, insira o código correspondente aos atributos.
+Observe que o recuo indica que os atributos pertencem ao Método Construtor da classe.
+
+class Cliente:
+    def __init__(self):
+        
+        self.nome
+        self.telefone
+
+
+Como Personalizar o Método Construtor?
+
+Como já vimos, o Método Construtor tem a finalidade de estabelecer os valores obrigatórios para construção de um novo objeto.
+O Método Construtor da classe pode conter um conjunto de parâmetros. Com isso, podemos determinar os valores para inicialização dos atributos.
+Isso garante um melhor funcionamento de toda a estrutura do objeto, obrigando ao programador determinar valores default no momento da inicialização do objeto.
+
+>>1. Com o parâmetro self são passados os parâmetros que serão utilizados para inicialização dos atributos.
+>>2. Inicializamos os atributos com os valores passados por parâmetro.
+
+class Cliente:
+    def __init__(self, n, fone):
+
+        self.nome = n
+        self.telefone = fone
+
+Importante
+Na linguagem Python não é recomendável criar mais de um Método Construtor para a classe.
+
+
+Instanciando Objetos
+
+Na linguagem Python, as classes são utilizadas para definição dos objetos.
+Podemos afirmar que a classe é o nosso código e, para que esse código seja utilizado, precisamos criar os objetos, assim, criamos instâncias do objeto.
+Na orientação a objetos, instância e objetos são sinônimos.
+
+
+Objetos no Python
+
+Na linguagem Python, todo objeto criado possui um código de identificação composto por um número inteiro não negativo, conhecido como ID.
+Assim, as instâncias de objetos são diferenciadas.
+Esse ID diferencia objeto e atributos deste objeto.
+
+
+Criando Referência de Classes
+
+Para instanciar o objeto de uma classe para outra, devemos criar a referência da classe que será instanciada.
+
+>>1. Primeiramente, abra a classe Main.py criada no início do projeto e disponível no menu.
+>>2. A classe Main não possui atributos.
+Utilizamos apenas a palavra reservada pass.
+>>3. Adicionamos a linha de código correspondente à importação da classe.
+>>4. Agora, vamos interpretar o código de importação da classe?
+A palavra reservada from é utilizada para indicar qual classe será importada...
+>>5. ... e a palavra reservada import é a referência de qual classe será utilizada para a criação de objetos em um arquivo à parte.
+
+class Main:
+    pass
+
+print("Testando o projeto")
+
+from Cliente import Cliente
+
+
+Instanciando um Novo Objeto
+
+>>1. Após criarmos a referência da classe, adicionamos, na linha seguinte, o novo objeto, passando por parâmetro os valores para inicialização dos atributos.
+>>2. A declaração de um novo objeto funciona como declarar uma nova variável.
+>>3. Passamos o nome da classe que será instanciada.
+>>4. Passamos todos os atributos criados no Método Construtor da classe Cliente.
+
+class Main:
+    pass
+
+print("Testando o projeto")
+
+from Cliente import Cliente
+
+c1 = Cliente("João", "123-456")
+
+
+Testando o Projeto
+
+Para verificarmos a prática de instanciar objetos, vamos acrescentar os comandos para impressão e, em seguida, compilar o nosso código.
+
+>>1. A primeira linha imprime a referência do objeto (id).
+Já a segunda linha imprime o conteúdo adicionado.
+>>2. Para compilar, selecione a classe Main.
+Em seguida, pressione o botão para compilar o código.
+>>3. Será apresentado o ID do objeto.
+>>4. E será exibido o conteúdo do objeto.
+
+class Main:
+    pass
+
+print("Testando o projeto")
+
+from Cliente import Cliente
+
+c1 = Cliente("João", "123-456")
+
+print(c1)
+print(c1.nome," e ",c1.telefone)
+
+
+
+Na prática
+
+Projeto Controle Bancário
+
+Vamos iniciar um projeto de controle bancário!
+O objetivo do projeto é o desenvolvimento orientado a objetos para a execução de tarefas do cotidiano bancário, como saque, consulta de saldo e depósito.
+Durante esta aula, já desenvolvemos a classe Cliente e seus atributos. Agora, vamos desenvolver a classe Conta, que será definida recebendo o objeto Cliente, além dos atributos “número” e “saldo”.
+
+Classe Conta
+
+Para desenvolver a classe Conta, crie um novo arquivo Python, por meio do menu File-New. Na caixa de texto New, escolha a opção Python File. Digite o nome Conta e pressione a tecla Enter, para finalizar.
+Logo após, adicione a codificação inicial para a classe:
+
+class Conta:
+    def __init__(self, titular, numero, saldo):
+        self.saldo = 0
+        self.numero = numero
+        self.tiular = titular
+
+Testando o Projeto
+
+Para verificar o funcionamento do projeto até o momento, modifique a classe Main, trazendo os dois objetos criados:
+
+class Main:
+	pass
+
+print("Testando o projeto")
+
+from Cliente import Cliente
+
+from Conta import Conta
+
+c1= Cliente("João", "114444-2222")
+conta=Conta(c1.nome,6565,0)
+
+print(conta.titular," Numero: ",conta.numero, "Seu Saldo: ",conta.saldo)
+
+Analise o Resultado
+
+Observe que, ao compilar o projeto (por meio da classe Main), as informações são impressas e a informação relacionada ao titular é trazida do objeto Cliente:
+
+C:\Users\anaconda\envs\APP\python.exe C:/DEV/App/Main.py
+
+Testando o projeto
+João numero: 6565 Seu Saldo: 0
+
+Process finished with exit code 0
+
+
+Etapa Concluída
+
+Até aqui conseguimos compreender sobre o conceito de Orientação a Objetos aplicado na linguagem Python.
+Criamos uma classe com seus respectivos atributos, adicionamos métodos e, por fim, instanciamos objetos.
+No próximo módulo, você vai conhecer sobre o conceito de encapsulamento de dados, alterando a visibilidade dos membros e aplicando os métodos setter e getter.

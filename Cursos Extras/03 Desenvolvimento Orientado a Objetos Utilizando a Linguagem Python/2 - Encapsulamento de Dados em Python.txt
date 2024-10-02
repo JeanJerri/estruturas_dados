@@ -1,0 +1,249 @@
+Neste módulo, você vai conhecer o conceito de encapsulamento de dados, alterando a visibilidade dos membros e aplicando os métodos Getter e Setter.
+
+
+Encapsulamento de Dados
+
+Uma das principais vantagens do conceito de orientação a objetos é a utilização de estruturas sem a necessidade de conhecer como elas foram implementadas.
+
+Para isso, o conceito de encapsulamento de dados torna-se essencial, pois envolve a proteção dos atributos ou métodos de uma classe.
+
+A ideia de encapsular o código vem com a premissa de proteger atributos e métodos de uma classe (tornando-os privados), de forma que somente a classe onde as declarações foram feitas tenham acesso.
+
+Esse conceito garante a integridade das informações e também facilita a utilização das implementações.
+
+O conceito de encapsulamento traz o isolamento do código, ou seja, variáveis e funções que são utilizadas internamente não devem estar disponíveis externamente.
+
+
+Importante
+Diferente da maioria das linguagens, como Java, PHP e C#, o Python (independente da nomenclatura), mantém todos os atributos e métodos públicos.
+Isso não significa que todas as funções de uma classe podem ser chamadas por outras ou, principalmente, que todos os atributos podem ser lidos e alterados sem cuidados.
+Para isso, na linguagem Python temos o que chamamos de convenção para aplicação destes conceitos de orientação a objetos.
+É muito importante ressaltar que a maioria das IDEs (inclusive o PyCharm) oculta, automaticamente, atributos ou classes quando utilizamos a convenção de forma correta.
+
+
+Modificadores de Acesso
+
+De forma geral, todas as linguagens de programação que utilizam orientação a objetos usam modificadores de acesso para alterar a visibilidade de classes, atributos e métodos.
+Para a implementação do encapsulamento é fundamental alterarmos a visibilidade dos atributos de uma classe. Para isso, utilizamos os modificadores de acesso.
+Diferentemente de outras linguagens, como o Java e o C#, que utilizam palavras reservadas, a linguagem Python utiliza o símbolo underscore ”_”.
+
+Dentro da orientação a objetos temos os modificadores Public, Protected e Private.
+A seguir, vamos conhecer as principais características de cada um deles.
+
+Public:
+É o mais comum entre os modificadores.
+Ele permite acesso tanto de dentro, quanto de fora de uma classe.
+Sua implementação se dá por meio do uso do underline ”_” na frente do nome.
+
+Protected:
+Utilizando o modificador protegido, somente suas classes e subclasses terão acesso ao atributo ou método.
+Para sua implementação adicione um underline ”_” antes do nome.
+
+Private:
+É o modificador mais restrito do desenvolvimento orientado a objetos.
+Ele permite que somente a sua classe (onde foi definido) tenha acesso a um determinado atributo ou método.
+Para definir o método private adicionamos underline duplo ”__” na frente do nome.
+
+
+Visibilidade dos Membros
+
+Um dos recursos mais importantes da orientação a objetos é o de restringir o acesso às variáveis de um objeto e a alguns métodos.
+O objetivo principal desta ação é evitar que variáveis internas sejam acessadas e recebam valores diretamente ou, ainda, que métodos internos sejam invocados externamente, garantindo, assim, a integridade das informações.
+Para modificar a visualização de um membro dentro das IDEs utilizamos as convenções apresentadas para a linguagem.
+
+
+Na prática
+
+Modificando os Atributos
+
+Para iniciar o processo de encapsulamento, vamos modificar os atributos das classes já criadas de forma que fiquem privados. Vamos iniciar pela classe Cliente.
+
+Observe que foi adicionado o símbolo underline (_) antes da definição do nome do atributo.
+class Cliente:
+    def __init__(self, n, fone):
+
+        self._nome = n
+        self._telefone = fone
+
+Conferindo a Restrição de Acesso
+
+Após a alteração do nome do atributo, podemos observar que a classe Main não visualiza mais o atributo diretamente(através do ci.nome ou c1.telefone).
+
+
+Métodos de Acesso (Get e Set)
+
+Para permitir o acesso aos atributos de forma controlada, a prática mais comum é a utilização de dois métodos de acesso: um retornando valor e outro que muda valor.
+
+Getters e Setters são usados na maioria das linguagens de programação orientada a objetos com o objetivo de garantir o princípio de encapsulamento de dados.
+
+Os métodos são utilizados para implementações que alteram os valores internos da classe ou que retornam valores dela.
+
+Get
+Sempre retornam valores.
+O método Get é utilizado para ler os valores internos do objeto e enviá-los como valor de retorno da função.
+
+Set
+Recebem valores por parâmetros.
+Os métodos Set recebem argumentos que serão atribuídos a membros internos do objeto.
+
+
+Sintaxe dos Métodos de Acesso
+
+Get
+get_nome do atributo()
+
+Exemplo:
+get_idade(self):return self._idade
+
+Set
+set_nome do atributo
+(valor por parâmetro)
+
+Exemplo:
+def set_idade(self, valor):
+self.idade=valor
+
+
+Na prática
+
+Criando os Métodos de Acesso
+
+Dando continuidade ao processo de encapsulamento, vamos desenvolver os métodos de acesso nas classes já criadas. Assim, vamos acessar os atributos privados. Vamos iniciar pela classe Cliente.
+
+class Cliente:
+    def __init__(self, n, fone):
+
+        self._nome = n
+        self._telefone = fone
+
+    # método get
+    def get_nome(self):
+        return self._nome
+
+    # método set
+    def set_nome(set, nome):
+        self._nome = nome
+
+
+Forma “Pythônica” de Encapsular Dados
+
+Encapsular os dados de uma classe é muito importante, pois deixa seu sistema organizado para possíveis mudanças.
+Quando os dados estão encapsulados não é necessário mudar as regras de negócio em vários lugares, mas sim em um único lugar, já que essa regra está encapsulada.
+O conjunto de métodos públicos de uma classe é conhecido como Interface da classe, sendo a única maneira de comunicação com os objetos da classe.
+
+Na prática, em Python (diferentemente da linguagem Java), o “_” (underline) antes do atributo não impede o acesso dele em outra classe, ou seja, ele não fica privado.
+Essa forma é somente um indicativo de que os métodos nos quais os nomes iniciam com “_” (underline) não devem (mas podem) ser acessados.
+Isso pode trazer problemas?
+
+Em alguns casos pode sim! Por exemplo, na manipulação da classe Conta, o atributo saldo deve ser manipulado somente pelos métodos Saque() e Depósito() evitando, assim, que seja inserido um valor negativo no saldo.
+Em alguns atributos é muito importante preservar o valor iniciado na classe, não sendo possível realizar a inserção de qualquer valor no atributo, a não ser por meio de métodos.
+No caso do atributo saldo, por exemplo, ele não deve ficar negativo.
+
+
+Na prática
+
+Alterando a Classe Conta
+
+Para o atributo saldo não ser negativo, a utilização do método setter é justificável, ficando do seguinte modo:
+
+class Conta:
+	def __init__(self, titular, numero, saldo):
+		self.saldo=0
+		self.numero = numero
+		self.titular = titular
+
+		def get_saldo(self):
+			return self._saldo
+
+		def set_saldo(self, saldo):
+			if (saldo<0):
+				print("O saldo não pode ser negativo")
+			else:
+				self._saldo = saldo
+
+
+Resumindo Getter e Setter no Python
+
+Tradicionalmente, as linguagens de programação orientada a objetos relatam que atributos e métodos tem de ser separados basicamente em “público” e “privado”.
+
+A linguagem Java, em particular, sugere, por meio da sua sintaxe e práticas, que a maior parte dos atributos seja privada e, para sua manipulação, sejam criados os métodos, neste caso, os getters e setters.
+
+Em Python, este conceito de “público e privado” não existe na sintaxe da linguagem.
+
+O que temos em Python é a convenção de estilo que diz que nomes de atributos, métodos e funções iniciados com “_” (underscore) não devem ser usados por usuários de uma classe, só pelos próprios implementadores e que o funcionamento desses métodos e funções pode mudar sem aviso prévio.
+
+Portanto, não é considerado errado, no Python, deixar os atributos simplesmente como atributos de instância de forma simples, onde qualquer usuário da classe pode ler ou alterar, sem depender de nenhum outro mecanismo.
+
+No entanto, os métodos getter e setter podem ser utilizados com funcionalidades adicionais, conforme colocado no atributo saldo do nosso exemplo.
+
+
+Protocolo de Descritores - Decorator
+
+Um decorator é um padrão de projeto de software que permite adicionar comportamento a um objeto já existente, em tempo de execução, ou seja, agrega, de forma dinâmica, responsabilidades adicionais a um objeto.
+
+Na prática, o decorator permite que atributos de uma classe tenham responsabilidades.
+
+Um decorator é um objeto invocável, uma função que aceita outra função como parâmetro (a função decorada).
+
+O decorator pode realizar algum processamento com a função decorada e devolvê-la ou substituí-la por outra função.
+
+
+@Property
+
+A linguagem Python traz uma outra solução para manter os atributos privados, conhecida como Property.
+
+A função Property é um Decorator e é utilizada para obter um valor de um atributo.
+
+Basicamente, a função Property permite que você declare uma função para obter o valor de um atributo.
+
+
+Na prática
+
+Podemos alterar a classe Conta utilizando Property da seguinte forma:
+
+class Conta:
+    def __init__(self, titular, numero):
+        self.saldo = 0.0
+        self.numero = numero
+        self.titular = titular
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @saldo.setter
+    def saldo(self, saldo):
+        if (saldo < 0):
+            print("O saldo não pode ser negativo")
+        else:
+            self._saldo = saldo
+
+
+class Main:
+	pass
+
+print("Testando o projeto")
+
+from Cliente import Cliente
+
+from Conta import Conta
+
+c1= Cliente("João","114444-2222")
+conta=Conta(c1.get_nome(),6565)
+
+print(conta.titular,"\nNumero: ",conta.numero,"\nSeu Saldo: ",conta.saldo)
+
+
+Importante
+Em Python, não é considerada uma boa prática criar uma classe e, logo em seguida, adicionar propriedades (property) para todos os atributos.
+A função Property deve ser utilizada somente se você precisar da funcionalidade de transformar ou verificar um atributo quando ele é atribuído ou lido.
+
+
+Importante
+Sempre faça a identação usando tab para evitar erros, não cole o código ou use o espaço.
+
+Etapa Concluída
+
+Neste módulo foi possível ter uma maior compreensão sobre encapsulamento de dados e de como a linguagem Python trabalha de forma diferenciada das outras linguagens neste conceito.
+Em nosso projeto prático definimos os atributos, assim como sua convenção de acesso.
+No próximo módulo, você vai conhecer mais sobre String e sobre as várias formas de manipulação deste tipo de dado.

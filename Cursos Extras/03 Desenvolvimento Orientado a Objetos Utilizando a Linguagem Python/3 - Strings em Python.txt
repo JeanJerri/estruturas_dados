@@ -1,0 +1,88 @@
+Neste módulo, você vai conhecer mais sobre String e, também, sobre as várias formas de manipulação deste tipo de dado.
+
+
+Introdução a String
+
+Dados textuais no Python são tratados como objetos str ou strings.
+
+Podemos definir que String é qualquer tipo de texto que está entre aspas simples ou aspas duplas.
+
+Podemos considerar uma String qualquer sequência de caracteres, seja sequência numérica, letras do alfabeto ou caracteres especiais.
+
+O tipo String é conhecido como uma cadeia de caracteres. Podemos imaginar uma string como uma sequência de blocos onde cada letra, número ou espaço em branco ocupa uma posição.
+
+A linguagem Python traz três maneiras de trabalharmos dados do tipo string e é isso que veremos a seguir!
+
+
+Trabalhando Dados por Tipo de String
+
+>>1. Aspas Simples '
+O texto é escrito entre aspas simples.
+>>2. Aspas Duplas "
+O texto é escrito entre aspas duplas.
+>>3. Três Aspas ''''''
+O texto é escrito entre aspas simples ou duplas e permite a inserção de múltiplas linhas.
+
+
+Função len()
+
+A linguagem Python traz o tamanho associado à variável do tipo string. Esse tamanho se dá pela quantidade de caracteres armazenados na variável, onde o conteúdo pode ser acessado caractere por caractere.
+
+O tamanho de uma string pode ser obtido utilizando a função len(). Essa função retorna o número de caracteres armazenados em uma string. Ela retorna um único valor, indicando a quantidade de caracteres contidos na variável.
+
+class Main:
+	nome = “Ana”
+	print(len(nome))
+
+
+C:\Users\anaconda\envs\APP\python.exe C:/DEV/App/Main.py
+3
+
+Process finished with exit code 0
+
+
+Na prática
+
+Adicionando Métodos ao Projeto
+
+Vamos adicionar os métodos ao projeto controle bancário.
+Vamos iniciar adicionando o método saque() na classe Conta.
+
+Observe que utilizamos o atributo decorado de saldo.
+
+def saque(self, valor):
+	if (self.saldo>=valor):
+		self.saldo-=valor
+		print(“Saque realizado com sucesso”)
+	else:
+		print(“saldo insuficiente”)
+
+Agora, vamos adicionar o método deposita() também na classe Conta.
+
+	def deposita(self,valor):
+		self.saldo+=valor
+
+Vamos também adicionar o método Extrato() que trará as informações da Conta.
+
+	def extrato(self):
+		print(“Cliente: “ self._titular, “ Saldo Atual: “,self._saldo)
+
+Manipulando os Dados
+
+Por fim, vamos manipular os dados por meio da chamada de métodos na classe Main().
+Observe que todos os dados foram manipulados por meio das chamadas dos métodos.
+
+class Main:
+	pass
+
+from Cliente import Cliente
+
+from Conta import Conta
+
+c1= Cliente(“João”, “114444-2222)
+
+conta=Conta(c1.get_nome(), 1222)
+
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
