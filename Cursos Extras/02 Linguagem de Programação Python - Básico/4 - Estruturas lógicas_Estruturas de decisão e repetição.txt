@@ -1,0 +1,237 @@
+Operadores aritméticos
+
+Operação		Símbolo
+Adição			+
+Subtração		-
+Multiplicação		*
+Divisão Real		/
+Divisão Inteiro		//
+Exponenciação		**
+Resto da Divisão	%
+
+
+Operadores relacionais
+
+Descrição		Símbolo
+Igual a			==
+Diferente de		!=
+Maior que		>
+Menor que		<
+Maior ou igual a	>=
+Menor ou igual a	<=
+
+
+Operadores lógicos
+
+Algoritmo	Python
+E		and
+OU		or
+Não		not
+
+
+Indentação
+
+Uma das características mais importantes da linguagem Python é a indentação.
+Indentação é uma forma de arrumar o código, fazendo com que algumas linhas fiquem mais à direita que outras, à medida que adicionamos espaços em seu início. A indentação é uma característica importante no Python, pois além de promover a legibilidade, é essencial para o bom funcionamento do código.
+Enquanto na maioria das linguagens, como C, Java e PHP, os blocos de código são delimitados por chaves ({ }) ou comandos, em Python, os blocos são delimitados por espaços ou tabulações, formando uma indentação visual. Não existem símbolos de “abre” e “fecha”.
+
+Importante
+A linguagem Python requer uma indentação padronizada.
+Em outras linguagens, a indentação é apenas uma boa prática, mas não é obrigatória, por causa da delimitação dos blocos, utilizando comandos ou símbolos.
+
+Caso esteja utilizando uma IDE específica para Python, a indentação é feita, de forma automática, ao pressionar a tecla Enter. Por padrão, são usados quatro espaços em branco para definir a indentação.
+
+
+Estrutura de decisão
+
+A estrutura de decisão, também conhecida como estrutura condicional, tem como finalidade comparar e efetuar um desvio de processamento do programa.
+Caso a condição seja verdadeira, as instruções determinadas após a instrução if serão executadas.
+Se for necessário executar mais de uma instrução para a condição verdadeira, elas deverão estar escritas dentro de um bloco, ou seja, indentadas corretamente.
+
+E se a condição for falsa?
+
+Neste caso, utilizaremos o comando else, que significa “se não”.
+Assim, se a condição for falsa, serão executados os comandos que estiverem posicionados logo após a instrução else.
+
+Adicionalmente, se existir mais de uma condição alternativa que precise ser verificada, utilizamos a condição elif, pois ela avalia as expressões intermediárias antes do comando else.
+
+
+Estruturas de Repetição
+
+As estruturas de repetição, também conhecidas como laços de repetição, permitem que um conjunto de instruções seja executado, até que uma determinada condição seja verdadeira.
+
+As estruturas de repetição em Python são: FOR(para) e WHILE(enquanto)
+
+
+Estrutura For (para)
+
+Normalmente utilizamos a estrutura For quando sabemos quantas vezes o laço de programação deverá ser executado.
+É a estrutura mais utilizada na linguagem Python. Ela aceita sequências estáticas e geradas por Iteradores.
+
+Iteradores são estruturas que permitem acesso a vários itens de uma coleção de elementos, de forma sequencial.
+
+Durante a execução de uma estrutura For, o contador aponta para um elemento de uma determinada sequência. A cada iteração, o contador é atualizado para que o laço For processe os elementos correspondentes.
+
+Sintaxe da estrutura For: 
+for {referência} in {sequência}:
+	{bloco de código}
+
+
+Agora, você vai criar uma classe e adicionar à ela um código para exibir os números de 0 a 9 na tela, em ordem crescente:
+
+for n in range (10):
+	print(n)
+
+Este é o resultado da execução do código:
+
+C:\Users\rs\Py\PycharmProjects\Aula1\venv
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Detalhando o código
+
+No exemplo que acabamos de ver, a variável n é inicialmente ajustada para 0 (inicialização com valor padrão).
+Uma vez que n é menor do que 10 (condição), o comando print é executado.
+Essa condição é adicionada com o comando range.
+A variável n é incrementada em 1 (incremento padrão) e é testado se o valor de n ainda é menor do que 10.
+O processo se repete até que o valor de n fique maior ou igual a 10.
+Neste instante, o laço termina e o programa segue a execução das instruções do bloco de repetição.
+
+Determinar valor inicial
+
+Por padrão, o valor inicial do laço de repetição é 0.
+Podemos alterar esse valor no comando range.
+
+for n in range (5, 16):
+	print(n)
+
+Neste caso, os valores apresentados na tela terão como mínimo, o número 5 e, no máximo, 15.
+
+C:\Users\krsPy\PycharmProjects\Aula1\venv\Scripts\
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+Utilizar estrutura em ordem decrescente
+
+Também é possível utilizar o decremento no contador, dentro do comando range.
+
+for n in range (10, 0 -1):
+	print(n)
+
+Neste caso, os valores apresentados na tela estarão em ordem decrescente.
+
+C:\Users\Py\Py\PycharmProjects\Aula1\venv\Scripts\
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+Estrutura While (enquanto)
+
+A estrutura While (enquanto), executa um determinado conjunto de instruções, enquanto a condição verificada no início permanecer verdadeira.
+Diferente da estrutura For (para), não é necessário determinar o número de vezes que a condição será executada.
+No momento em que a condição for falsa, o processamento da rotina é desviado para fora do laço de repetição.
+Caso a condição seja falsa, logo no início do laço de repetição, as instruções contidas nele são ignoradas.
+
+Sintaxe da estrutura While:
+while {condição}:
+	{bloco de código}
+
+Na prática
+
+Agora, você vai criar uma classe e adicionar à ela um código para exibir os números de 1 a 15 na tela, em ordem crescente:
+
+x = 1;
+while x <=15:
+	print(x);
+	x=x+1
+
+Este é o resultado da execução do código while:
+
+C:\Users\kn\Py\PycharmProjects\Aula1\venv\Scripts\
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+Detalhando o código
+
+É importante observar que, diferente da estrutura For, na estrutura While temos de inicializar a variável antes do início do laço (x=1;) e, também, realizar o incremento dentro do bloco de repetição (x=x+1;).
+
+Na prática
+
+Para melhor compreensão sobre a estrutura de repetição While, vamos criar uma classe chamada MediaValores, na qual o usuário digita vários valores reais positivos.
+Todos estes números devem ser somados e, quando for digitado algum número negativo, o laço de repetição deverá encerrar e, na sequência, exibir a média dos valores digitados.
+Para o programa, crie a nova classe no projeto já criado anteriormente no PyCharm.
+Clique com o botão direito sobre a pasta correspondente ao projeto e selecione a opção New - Python File.
+Na janela New - Python File adicione o nome MediaValores e pressione a tecla Enter, para finalizar.
+
+Vamos analisar como fica o código do programa proposto:
+
+qtd =0
+soma=0
+media=0
+valor = float(input("Digite um valor: "))
+
+while (valor > 0.0):
+	soma = soma + valor
+	qtd = qtd + 1
+	# Entrada de valores
+	valor = float(input("Digite um valor: "))
+
+#caso digite um valor negativo o laço encerra
+media = soma / qtd
+print("\n Total da Soma: ",soma)
+print("\n Quantidade de valores digitados: ",qtd)
+print("\n Média dos valores: ", media)
+
+Vamos analisar alguns possíveis resultados:
+
+C:\Users\ko\Py\PycharmProjects\aula1\venv\scripts
+Digite um valor: 25.6
+Digite um valor: 52.5
+Digite um valor: 33.9
+Digite um valor: -1
+
+ Indentação Total da Soma: 112.0
+
+ Indentação Quantidade de valores digitados: 3
+
+ Indentação Média dos valores 37.3:
+
+Process finished with exit code 0

@@ -1,0 +1,77 @@
+A linguagem Python é Case Sensitive. Você sabe o que isso significa?
+Significa que ela faz distinção entre letras maiúsculas e minúsculas.
+
+O comando print() é utilizado quando desejamos imprimir alguma mensagem de texto na tela.
+A sintaxe da função print() requer que se utilize os parênteses com o texto que será exibido.
+Esse texto deve ser escrito, também, entre aspas, podendo ser aspas simples ‘ ou dupla ‘’.
+
+
+Variáveis
+
+Ao iniciarmos uma variável e atribuirmos um valor à ela, a maioria das linguagens de programação carrega valores que são alocados em memória e quando esses valores são alterados, a memória também é alterada.
+Na linguagem de programação Python, as variáveis armazenam endereços de memória e não valores. Por isso, é correto afirmar que o conceito de variável em Python é representado sempre por um objeto, e toda variável é uma referência.
+
+Declaração de variáveis
+
+Na linguagem Python não é necessário declarar as variáveis no início do código. Isso pode ser feito a qualquer momento, durante a codificação.
+Sobre o tipo da variável, não é necessário defini-lo em sua declaração. A linguagem interpreta o tipo de dado que está sendo armazenado.
+Caso seja necessário forçar o reconhecimento de algum tipo específico, basta realizar as conversões necessárias.
+
+Tipos de variáveis
+
+Diferente da maioria das linguagens, uma variável em Python não tem um tipo fixo, apenas o tipo do conteúdo.
+
+Exemplos:
+X = 10
+Ao atribuir o valor 10 na variável X, ela passará a ser reconhecida com um tipo inteiro.
+
+Cidade = ‘Santos’
+Atribuindo o valor ‘Santos’ na variável Cidade, ela passará a ser reconhecida com um tipo string.
+
+Também é possível identificar os tipos básicos que são: inteiro (int), real (float), lógico/booleano (bool) e string (str).
+
+
+Concatenando dados na saída padrão
+
+Até o momento, visualizamos as informações com a função print() exibindo apenas uma informação por vez. No momento da exibição podemos concatenar (unir) várias informações em apenas uma linha. Para isso, utilizamos a vírgula (,) para separar textos e as variáveis.
+Textos para exibição
+Para apresentação de textos é necessário utilizar aspas duplas “”.
+Também podemos concatenar as informações na linguagem Python utilizando o sinal de soma (+).
+Neste caso, temos de converter os valores que não são string para o tipo string.
+Para isso, utilizamos o comando (str) antes da impressão da variável.
+
+
+Utilizando máscara de formatação
+
+Assim como em outras linguagens, é possível utilizar identificadores para representar os tipos de dados armazenados nas variáveis que devem ser exibidas na tela. Vamos verificar a tabela de opções:
+
+Máscara		Tipo de Dado	Descrição
+%d ou %i	Int (inteiro)	Exibe um valor inteiro.
+%f		Float ou double	Exibe um valor decimal.
+%ld		Long Int	Exibe um número inteiro longo.
+%e ou %E	Float e double	Exibe um número exponencial (número científico).
+%c		Char (caractere)Exibe um caractere.
+%o		Int		Exibe um número inteiro em formato octal.
+%x ou %X	Int		Exibe um número inteiro no formato hexadecimal.
+%s		Char		Exibe uma cadeia de caracteres (string).
+%r		Boolean		Exibe true ou false (verdadeiro ou falso).
+
+
+Sequência de escapes
+
+Utilizamos a sequência de escapes para auxiliar na formatação da exibição dos dados.
+Para aplicá-los, utilizamos uma combinação de caracteres associados a uma contra barra (\).
+Vamos visualizar as opções:
+
+Sequência	Descrição
+\n		Insere uma quebra de linha.
+\t		Insere tabulação horizontal.
+\v		Insere tabulação vertical.
+\r		Equivalente ao efeito da tecla Enter.
+\’		Aspas simples.
+\”		Aspas duplas.
+\\		Insere uma barra invertida (backslash).
+\a		Chamado de asc bell ou beep do sistema. Se houver suporte, aciona um bipe.
+\b		Aciona o backspace, ou seja, apaga o caractere anterior.
+\f		Insere uma quebra de página.
+\u		Insere um caractere unicode. Deve acompanhar um código com 4 números.

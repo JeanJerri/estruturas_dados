@@ -1,0 +1,107 @@
+A lógica para programação é o processo de procurar pensar na mesma sequência em que o computador executará as tarefas.
+
+Seguindo a lógica de programação, procuramos imaginar como as ações serão executadas, partindo-se do estudo de um problema até chegar à solução dele, por meio da construção de um algoritmo.
+
+
+Algoritmos
+
+Sequência finita de passos que levam à execução de uma tarefa.
+
+Podemos pensar em um algoritmo como uma receita, ou seja, apresenta uma sequência de instruções para um fim específico.
+
+Essas instruções devem ser descritas de maneira simples e objetiva.
+
+Programas de Computadores
+
+Os programas de computadores são os algoritmos escritos em uma linguagem computacional, como Java, C#, Python, entre outras.
+
+Essas instruções são interpretadas e executadas por um computador.
+
+
+Características básicas do algoritmo
+Todo algoritmo, por padrão, tem de apresentar algumas características básicas.
+
+Ponto inicial e Ponto final
+Todo algoritmo deve ter um ponto inicial e chegar a um ponto final.
+
+Não ser ambíguo
+A leitura de um algoritmo tem de ser clara, não pode ter dupla interpretação.
+
+Tratar dados externos
+O algoritmo tem de receber dados externos e ser capaz de retornar resultados (saída de dados).
+
+Etapas alcançáveis
+O algoritmo deve ter suas etapas alcançáveis em algum momento da programação.
+
+
+Composição de um algoritmo
+Ao iniciar um algoritmo, é necessário dividir a situação-problema em três fases fundamentais:
+
+Entrada
+São os dados de entrada do algoritmo.
+
+Processamento
+São os procedimentos utilizados para chegar ao resultado final.
+
+Saída
+São os dados já processados, ou seja, o resultado da programação.
+
+
+Podemos representar algoritmos estruturados de três formas:
+
+Descrição Narrativa
+Fluxograma
+Pseudocódigo
+
+
+Variáveis e Constantes
+
+>>Variáveis
+
+Variável é um recurso utilizado na programação para armazenar e recuperar dados, ou seja, é um espaço que reservamos na memória atribuindo um nome e organizando os dados manipulados no programa.
+
+>>Constantes
+
+Uma constante é responsável por armazenar um valor fixo em um espaço da memória. Esse valor não se altera durante a execução do programa.
+
+
+Tipos de dados
+
+Ao criarmos uma variável em um programa temos de especificar o tipo de dado que será armazenado. Ao utilizar o português estruturado temos os seguintes tipos de dados:
+
+Caracter: Qualquer conjunto de caracteres alfanuméricos.
+Inteiro: Qualquer número inteiro, negativo, nulo ou positivo.
+Real: Qualquer número real no formato decimal, negativo, nulo ou positivo.
+Lógico:	Conjunto de valores (falso ou verdadeiro).
+
+
+Operadores
+Os operadores são meios de incrementar, decrementar, comparar e avaliar dados durante a execução do programa.
+
+Por padrão, temos quatro tipos de operadores:
+
+Operador de Atribuição
+Operadores Aritméticos
+Operadores Relacionais
+Operadores Lógicos
+
+O operador de atribuição em algoritmos é representado pela seta , indicando que algum valor será atribuído em alguma variável. Na maioria das linguagens de programação o símbolo de atribuição é o operador igual (=).
+
+
+Os operadores aritméticos permitem a realização de operações matemáticas com dados do tipo numérico. Além dos símbolos já conhecidos para adição, subtração, multiplicação e divisão, podemos utilizar, também, alguns outros símbolos, como operadores.
+
+Ao realizar as operações matemáticas temos uma sequência das operações a serem realizadas, que são:
+
+Cálculos que estão entre parênteses: ( )
+Exponenciação: * *
+Multiplicação, divisão (o que estiver primeiro): * /
+Adição ou Subtração (o que estiver primeiro): + ou -
+
+Os operadores relacionais são utilizados para comparar caracteres, números, variáveis e expressões. Estes operadores sempre retornam valores lógicos (verdadeiro/falso, true/false ou 0/1), podendo variar a simbologia, dependendo da linguagem de programação utilizada.
+
+Os operadores relacionais utilizados nos algoritmos são: Comparação, Diferente de, Maior que, Menor que, Maior ou igual e Menor ou igual.
+
+
+Os operadores lógicos servem para combinar resultados de expressões, retornando se o resultado final é verdadeiro ou falso.
+
+"e", "ou" e "não".

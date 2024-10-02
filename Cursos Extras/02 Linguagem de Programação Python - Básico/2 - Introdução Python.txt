@@ -1,0 +1,23 @@
+Linguagem Python - https://python.org.br/
+A linguagem de programação Python vem crescendo muito nos últimos anos devido à sua simplicidade e, principalmente, à sua grande compatibilidade, pois funciona bem na maioria dos sistemas operacionais.
+
+Outra grande vantagem é a capacidade de auxiliar outras linguagens, por meio da implantação de novos módulos ou do uso de bibliotecas.
+
+Características da linguagem de programação Python
+Linguagem de alto nível
+Orientada a objetos
+Tipagem dinâmica e forte
+Fácil aprendizagem
+Comunidade ativa
+Muitas bibliotecas/recursos
+Linguagem interpretada
+
+O que é linguagem interpretada?
+É uma linguagem de programação na qual o código fonte é executado por um programa de computador chamado interpretador que, em seguida, é executado pelo sistema operacional ou processador.
+
+Versões do Python
+Use Python 2 somente quando estiver trabalhando com um software que ainda não foi migrado para Python 3 ou caso precise manter algum sistema legado.
+Python 3 introduziu algumas mudanças que quebraram a compatibilidade com a versão anterior, o que criou a necessidade de se manter duas versões da linguagem. Está constantemente evoluindo e recebendo novas funcionalidades, que não estavam presentes na versão anterior.
+Para saber mais sobre as diferenças entre as versões, acesse  https://docs.python.org/3.0/whatsnew/3.0.html
+
+
