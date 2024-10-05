@@ -1,0 +1,6 @@
+A Pilha1 funciona como a Pilha Estática
+A Pilha2 funciona como a Pilha Estática Invertida
+
+O seu tamanho armazena o conteúdo somado das duas pilhas, mas seus metódos só agem sobre cada pilha.
+Na verificação se está cheia, é feita a comparação entre o da pilha normal com o ponteiro da pilha invertida-1,
+se estiverem com os mesmos valores a pilha está cheia. Por isso usa apenas um metódo para verificar se está cheia.
